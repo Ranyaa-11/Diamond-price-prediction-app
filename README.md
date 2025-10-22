@@ -152,18 +152,6 @@ rf_model = RandomForestRegressor(
 ### Local Deployment
 The app runs locally on `http://localhost:8501` by default.
 
-### Cloud Deployment
-Deploy to platforms like:
-- **Streamlit Cloud** (recommended)
-- **Heroku**
-- **AWS EC2**
-- **Google Cloud Platform**
-
-For Streamlit Cloud:
-1. Push code to GitHub
-2. Connect repository to Streamlit Cloud
-3. Deploy with one click
-
 ## 🔹 Troubleshooting
 
 ### Common Issues
@@ -204,4 +192,5 @@ This project is open source and available under the [MIT License](LICENSE).
 **Built with ❤️ using Streamlit and Scikit-learn**
 
 For questions or support, please open an issue in the repository.
+
 
