@@ -1,4 +1,4 @@
-# 💎 Diamond Price Prediction App
+#  Diamond Price Prediction App
 
 An interactive web application built with Streamlit that predicts diamond prices using machine learning. The app uses a Random Forest Regressor trained on the Diamonds dataset to estimate diamond prices based on their physical and categorical attributes.
 
@@ -100,19 +100,6 @@ The model is trained on the **Diamonds Dataset** containing:
 - **price**: Price in US dollars (326-18823)
 - **x, y, z**: Length, width, and height in mm
 
-## 🔹 Model Performance
-
-The Random Forest Regressor achieves:
-- **R² Score**: ~88% (excellent fit)
-- **Mean Absolute Error**: ~$1,200
-- **Root Mean Square Error**: ~$1,800
-
-### Feature Importance (Top 5)
-1. **Carat Weight** - Most important factor
-2. **Dimensions (x, y, z)** - Physical size impact
-3. **Clarity Grade** - Internal characteristics
-4. **Color Grade** - Color purity
-5. **Cut Quality** - Light reflection
 
 ## 🔹 Project Structure
 
@@ -128,29 +115,7 @@ diamond-price-app/
 └── feature_columns.pkl        # Feature column names 
 ```
 
-## 🔹 Customization
 
-### Adding New Features
-1. Modify the feature engineering in `train_model.py`
-2. Update the input form in `app.py`
-3. Retrain the model with the new features
-
-### Model Tuning
-Edit hyperparameters in `train_model.py`:
-```python
-rf_model = RandomForestRegressor(
-    n_estimators=100,      # Number of trees
-    max_depth=20,          # Maximum tree depth
-    min_samples_split=5,   # Minimum samples to split
-    min_samples_leaf=2,    # Minimum samples per leaf
-    random_state=42
-)
-```
-
-## 🔹 Deployment
-
-### Local Deployment
-The app runs locally on `http://localhost:8501` by default.
 
 ## 🔹 Contributing
 
@@ -164,18 +129,7 @@ The app runs locally on `http://localhost:8501` by default.
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🔹 Acknowledgments
 
-- **Diamonds Dataset**: Used for training the machine learning model
-- **Streamlit**: For the amazing web app framework
-- **Scikit-learn**: For the machine learning algorithms
-- **Plotly**: For interactive visualizations
-
----
-
-**Built with ❤️ using Streamlit and Scikit-learn**
-
-For questions or support, please open an issue in the repository.
 
 
 
