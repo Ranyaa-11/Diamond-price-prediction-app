@@ -58,7 +58,7 @@ pip install -r requirements.txt
 Before running the app, you need to train the machine learning model:
 
 ```bash
-python train_model.py
+python clean_train.py
 ```
 
 This will:
@@ -69,7 +69,7 @@ This will:
 
 ### 4. Run the Streamlit App
 ```bash
-streamlit run app.py
+streamlit run clean_app.py
 ```
 
 The app will open in your default web browser at `http://localhost:8501`
@@ -119,13 +119,13 @@ The Random Forest Regressor achieves:
 ```
 diamond-price-app/
 ├── clean_app.py                 # Streamlit web application
-├── clean_train_.py         # Model training script
+├── clean_train.py         # Model training
 ├── diamonds.csv          # Dataset
 ├── requirements.txt      # Python dependencies
 ├── README.md            # This file
-├── diamond_price_model.pkl    # Trained model (generated)
-├── label_encoders.pkl         # Categorical encoders (generated)
-└── feature_columns.pkl        # Feature column names (generated)
+├── diamond_price_model.pkl    # Trained model 
+├── label_encoders.pkl         # Categorical encoders 
+└── feature_columns.pkl        # Feature column names 
 ```
 
 ## 🔹 Customization
@@ -152,22 +152,6 @@ rf_model = RandomForestRegressor(
 ### Local Deployment
 The app runs locally on `http://localhost:8501` by default.
 
-## 🔹 Troubleshooting
-
-### Common Issues
-
-1. **Model files not found**
-   - Run `python train_model.py` first
-   - Ensure all `.pkl` files are generated
-
-2. **Import errors**
-   - Install all dependencies: `pip install -r requirements.txt`
-   - Check Python version (3.8+ required)
-
-3. **Memory issues with large datasets**
-   - The app uses data sampling for visualizations
-   - Adjust sample size in `load_sample_data()` function
-
 ## 🔹 Contributing
 
 1. Fork the repository
@@ -192,5 +176,6 @@ This project is open source and available under the [MIT License](LICENSE).
 **Built with ❤️ using Streamlit and Scikit-learn**
 
 For questions or support, please open an issue in the repository.
+
 
 
